@@ -2,7 +2,7 @@ FROM node:16.14.0 as nodeBuilder
 # 指定构建过程中的工作目录
 WORKDIR /wxcloudrun-wxcomponent
 
-# 将当前目录（dockerfile所在目录）下所有文件都拷贝到工作目录下
+# 将当前目录（dockerfile所在目录）下所有文件都拷贝到工作目录下12
 COPY . /wxcloudrun-wxcomponent/
 
 RUN cd /wxcloudrun-wxcomponent/client && npm install --registry=https://registry.npmmirror.com && npm run build
